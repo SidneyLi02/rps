@@ -1,0 +1,76 @@
+*{  /* removing global margins */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    /* relative height */
+    height: 100vh; 
+    background-color: rgb(32, 3, 32);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.score {
+    color: rgb(224, 224, 224);
+    height: 20vh;
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+    /* 1. defines flex container, 
+    2. space-around defines alignment along main axis, evenly distributed
+    3. align-items allows text to lie middle in flex container */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2 {
+    /* larger display of player/computer */
+    font-size: 30px;
+}
+
+.score p {
+    /* center score within container */
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.intro {
+    color: rgb(224, 224, 224);
+
+    /* 1. relative height of 50%
+    2. init flex container
+    3. column flex direction
+    4. center align
+    5. space-around justification */
+
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.intro h1 {
+    font-size: 52px;
+}
+
+.intro button {
+
+    background: none;
+    color: rgb(224, 224, 224);
+
+    /* init dimensions of button */
+    width:  150px;
+    height: 50px;
+    font-size: 16px;
+    
+    /* border:n none; */
+    background-color: royalblue; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* rounded */
+    border-radius: 10%;
+}
