@@ -1,4 +1,5 @@
 const Game = () => {
+    
     let playerScore = 0;
     let computerScore = 0;
 
@@ -6,7 +7,7 @@ const Game = () => {
 
         const initBtn = document.querySelector(".intro button");
         const initScreen = document.querySelector(".intro");
-        const match = document.querySelector("match");
+        const match = document.querySelector(".match");
         
         // if initBtn is clicked, add fadeOut to class of intro page
         initBtn.addEventListener("click", () => {
