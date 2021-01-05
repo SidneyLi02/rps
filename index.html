@@ -25,7 +25,7 @@
             <button> Commence gameplay </button>
         </div>
 
-        <div class="match">
+        <div class="match fadeOut">
             <h2 class="winner"> Choose an option. </h2>
             <div class="hands">
                 <img class = "player-hand" src = "assets/img/rock.png" alt = "player default hand">
@@ -41,13 +41,12 @@
 
     </section>
 
-    <!-- audio autoplay does not work despite script, possibly due to chrome's autoplay restrictions?-->
-    <audio autoplay loop id = "audio"> 
-        <source src = "assets/music/Preludes, Op. 28 - No. 4 'Suffocation'.mp3" type="audio/mp3">
+    <!-- audio autoplay does not work on chrome (works on edge) 
+        possibly due to chrome's autoplay restrictions-->
+    <audio controls loop hidden autoplay id = "audio"> 
+        <source src = "testsong.mp3" type="audio/mp3">
     If you are seeing this, your browser does not support audio.
     </audio> 
-
-    <script> document.getElementById('audio').play(); </script>
     
     <script src = "scripts/run.js" />
   </body>

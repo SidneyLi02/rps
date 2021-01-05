@@ -58,7 +58,8 @@ section {
     font-size: 52px;
 }
 
-.intro button {
+.intro button,
+.match button {
 
     background: none;
     color: rgb(224, 224, 224);
@@ -71,6 +72,50 @@ section {
     /* border:n none; */
     background-color: royalblue; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* rounded */
+    /* rounded button */
     border-radius: 10%;
+    cursor: pointer;
+}
+
+.match {
+    /* https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
+    for centering an object within the center
+    in this case, the entire match div */
+
+    position: absolute; /* or fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.winner {
+    /* displays winner text */
+
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.player-hand {
+    transform: rotateY(180deg);
+}
+
+div.fadeOut {
+    opacity: 0;
+
+    /* prevent clicking on button */
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 100;
+    pointer-events: all;
 }
